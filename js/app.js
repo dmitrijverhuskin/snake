@@ -8,7 +8,7 @@ $(document).ready(function () {
         width = $("#canvas").width(),
         height = $("#canvas").height();
 
-        let cw = 10,
+        var cw = 10,
         d,
         food,
         score;
@@ -128,9 +128,9 @@ $(document).ready(function () {
             $(document).keydown(function (e) {
                 let key = e.which;
 
-                if (key === "37" && d !== "right") d = "left";
-                    else if (key === "38" && d !== "down") d = "up";
-                    else if (key === "39" && d !== "left") d = "right";
-                    else if (key === "40" && d !== "up") d = "down";
+                if (key === 37 && d !== "right") d = "left";
+                    else if (key === 38 && d !== "down") d = "up";
+                    else if (key === 39 && d !== "left") d = "right";
+                    else if (key === 40 && d !== "up") d = "down";
             })
 });
