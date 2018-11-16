@@ -8,7 +8,7 @@ $(document).ready(function () {
         width = $("#canvas").width(),
         height = $("#canvas").height();
 
-        var cw = 10,
+        let cw = 10,
         d,
         food,
         score;
